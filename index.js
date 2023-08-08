@@ -2,15 +2,12 @@
 /**
  * OBJECTS
  */
-var person ={
-    name : 'Duy',
+const person ={
+    name : 'Name',
     age : 27,
-    gender : 'male',
-    hobbies : ['reading', 'swim', 'travel'],
-    sayHello: function() {
-        return "hello, my name is " + this.name;
-    },
+    gender : 'male'
 };
-console.log(person.name);
-console.log(person.hobbies[0]);
-console.log(person.sayHello());
+
+// for (let key in person){
+//     console.log(key + ": " + person[key])
+// }

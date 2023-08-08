@@ -7,12 +7,14 @@
 </head>
 <body>
     <p>Start with JS</p>
-    <div id="person"></div>
-    <script src="index.js"></script>
+    <div id="person-info"></div>
+    <script src="./index.js"></script>
     <script>
-        let personDiv = document.getElementById("person");
-        personDiv.innerHTML = person.sayHello();
+        let infoParagraph = document.getElementById("person-info");
+        for (let key in person){
+            let info = key + ": "+ person[key];
+            infoParagraph.innerHTML += info + "<br/>"
+        }
     </script>
-    <script></script>
 </body>
 </html>
