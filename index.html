@@ -6,15 +6,33 @@
     <title>Document JS</title>
 </head>
 <body>
+    <p id="current-time"></p>
     <p>Start with JS</p>
     <div id="person-info"></div>
     <script src="./index.js"></script>
-    <script>
-        let infoParagraph = document.getElementById("person-info");
-        for (let key in person){
-            let info = key + ": "+ person[key];
-            infoParagraph.innerHTML += info + "<br/>"
-        }
-    </script>
+    <p>Enter infor time</p>
+    <label for="">Name: </label>
+    <input type="text" id="nameInput">
+    <br>
+    <label for="">Time: </label>
+    <input type="time" id="timeInput">
+    <br>
+    <!--Dùng onclick để gọi hàm displayGreeting từ index.js--> 
+    <button onclick = "displayGreeting()"> Show Greeting</button> 
+    <p id="Greeting"></p>
+    <ul class="fruitsList"></ul>
+    
+
+<script>
+    function updateTime() {
+        var now = new Date();
+        var currentTimeElement = document.getElementById("current-time");
+        currentTimeElement.innerHTML = "The current time is: " + now.toLocaleString();
+    }
+    
+    setInterval(updateTime, 1000); // Cập nhật thời gian mỗi giây
+   
+</script>
+
 </body>
 </html>
