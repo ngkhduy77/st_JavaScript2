@@ -1,10 +1,5 @@
-const string = "Hello World";
-const pattern = /l/;
-const result    = string.match (pattern)
-
-console.log(result);
-if (result){
-    console.log ('found');
-} else {
-    console.log ('not found');
-}
+const html = document.body.innerHTML;
+// g = global
+// i = case-insensitive
+const replacedHtml = html.replace(/lorem/gi, "JS");
+document.body.innerHTML = replacedHtml;

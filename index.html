@@ -6,33 +6,16 @@
     <title>Document JS</title>
 </head>
 <body>
-    <p id="current-time"></p>
-    <p>Start with JS</p>
-    <div id="person-info"></div>
-    <script src="./index.js"></script>
-    <p>Enter infor time</p>
-    <label for="">Name: </label>
-    <input type="text" id="nameInput">
-    <br>
-    <label for="">Time: </label>
-    <input type="time" id="timeInput">
-    <br>
-    <!--Dùng onclick để gọi hàm displayGreeting từ index.js--> 
-    <button onclick = "displayGreeting()"> Show Greeting</button> 
-    <p id="Greeting"></p>
-    <ul class="fruitsList"></ul>
-    
-
-<script>
-    function updateTime() {
-        var now = new Date();
-        var currentTimeElement = document.getElementById("current-time");
-        currentTimeElement.innerHTML = "The current time is: " + now.toLocaleString();
-    }
-    
-    setInterval(updateTime, 1000); // Cập nhật thời gian mỗi giây
-   
-</script>
-
+    <p>Learning JavaScript</p>
+    <hr />
+    <p>
+    JavaScript is a programming language that is one of the core
+    technologies of
+    the World Wide Web. Almost all websites uses JavaScript in either
+    frontend,
+    backend or both.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo repellat, suscipit temporibus quidem eaque praesentium, recusandae atque error assumenda iure eligendi ad commodi? Possimus quis mollitia quidem soluta deserunt?</p>
+    <script src="index.js"></script>
 </body>
 </html>
